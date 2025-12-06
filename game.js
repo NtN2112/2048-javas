@@ -1,3 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>2048 GAME</title>
+    </head>
+    <body>
+        <header>2048</header>
+        <div class="tablee">
+            <table>
+                <tr>
+                <td id = "cell1"></td>
+                <td id = "cell2"></td>
+                <td id = "cell3"></td>
+                <td id = "cell4"></td>
+                </tr>
+                <tr>
+                <td id = "cell5"></td>
+                <td id = "cell6"></td>
+                <td id = "cell7"></td>
+                <td id = "cell8"></td>
+                </tr>
+                <tr>
+                <td id = "cell9"></td>
+                <td id = "cell10"></td>
+                <td id = "cell11"></td>
+                <td id = "cell12"></td>
+                </tr>
+                <tr>
+                <td id = "cell13"></td>
+                <td id = "cell14"></td>
+                <td id = "cell15"></td>
+                <td id = "cell16"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="buttons">
+            <button id="reset">RESET</button>
+        </div>
+        <script src="script.js">jh</script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+    background-color: #faf8f0;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#806958
+}
+header{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bolder;
+}
+.tablee{
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+}
+table{
+    border-collapse:collapse;
+    margin-top:40px;
+    margin-bottom:40px;
+}
+td{
+    width:60px;
+    height:60px;
+    border:5px solid #856b58;
+    background-color: #f5efda;
+    text-align:center;
+    font-weight: bold;
+}
+.buttons{
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+}
+button{
+    background-color:#f5efda ;
+    border:0px;
+    border-radius:10px;
+    width:60px;
+    height:50px;
+    color:#806958;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let board=[[0,2,0,0],[0,2,0,0],[0,0,0,0],[0,0,0,0]]
 
 function update_row(start, row){
@@ -104,53 +231,3 @@ document.getElementById("reset").addEventListener("click", () => {
   update_board(board);
 })
 update_board(board)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table>
-    <tr>
-      <td id = "cell1"></td>
-      <td id = "cell2"></td>
-      <td id = "cell3"></td>
-      <td id = "cell4"></td>
-    </tr>
-    <tr>
-      <td id = "cell5"></td>
-      <td id = "cell6"></td>
-      <td id = "cell7"></td>
-      <td id = "cell8"></td>
-    </tr>
-    <tr>
-      <td id = "cell9"></td>
-      <td id = "cell10"></td>
-      <td id = "cell11"></td>
-      <td id = "cell12"></td>
-    </tr>
-    <tr>
-      <td id = "cell13"></td>
-      <td id = "cell14"></td>
-      <td id = "cell15"></td>
-      <td id = "cell16"></td>
-    </tr>
-  </table>
-<button id="reset">RESET</button>
